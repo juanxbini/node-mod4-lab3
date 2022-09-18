@@ -7,7 +7,8 @@ module.exports = {
         })
     },
     create: function(req,res) {
-        let persona = req.body
+        let persona = req.query
+        console.log(persona)
         personasModel.save(persona,(err,persona)=>{
             if(err){
                 return res.status(500).json({
@@ -15,7 +16,7 @@ module.exports = {
                 })
             }
             return res.status(200).json({
-                message: `${persona} saved`
+                message: `${JSON.stringify(persona)} saved`
             })
         })
     }

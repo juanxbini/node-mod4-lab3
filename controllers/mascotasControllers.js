@@ -7,7 +7,7 @@ module.exports = {
         })
     },
     create: function(req,res) {
-        let mascota = req.body
+        let mascota = req.query
         mascotasModel.save(mascota,(err,mascota)=>{
             if(err){
                 return res.status(500).json({
@@ -15,7 +15,7 @@ module.exports = {
                 })
             }
             return res.status(200).json({
-                message: `${mascota} saved`
+                message: `${JSON.stringify(mascota)} saved`
             })
         })
     }

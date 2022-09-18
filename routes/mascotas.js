@@ -1,13 +1,14 @@
 const router = require('express').Router()
+const mascotasController = require('../controllers/mascotasControllers')
 
 router.use('/',(req,res) =>{
     res.json({message: "Recurso mascotas"})
 })
-router.use('/list', (req,res)=>{
-    res.json({message: "Accediendo a la ruta /list desde el recurso mascotas"})
+router.get('/list', (req,res)=>{
+    mascotasController.list(req,res)
 })
-router.use('/save',(req,res)=>{
-    res.json({message: "Accediendo a ruta /save recurso mascotas"})
+router.post('/save',(req,res)=>{
+    mascotasController.create(req,res)
 })
 
 module.exports = router

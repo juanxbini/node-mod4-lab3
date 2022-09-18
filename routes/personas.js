@@ -1,10 +1,11 @@
 const router = require('express').Router()
+const personasController = require('../controllers/personasControllers')
 
 router.use('/list', (req,res)=>{
-    res.json({message: "Ruta /list recurso personas"})
+    personasController.list(req,res)
 })
 router.use('/save', (req,res)=>{
-    res.json({message: "Ruta /save recurso personas"})
+   personasController.create(req,res)
 })
 router.use('/', (req,res)=>{
     res.json({message: "Recurso personas"})
