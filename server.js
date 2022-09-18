@@ -7,8 +7,9 @@ const router = require('./routes/index')
 const PORT = process.env.PORT || 3000
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
-//routes
 
+
+//routes
 app.use('/', router)
 
 app.listen(PORT, ()=>{
