@@ -11,11 +11,14 @@ Consideraciones
 ● Este debe poseer dos rutas principales:
 “/mascotas” y “/personas”. Dentro de las
 mismas las subrutas “/listar” y “/guardar”.
+
 ● “/guardar” permitirá guardar una persona
 o mascota en arrays propios en memoria,
 con el siguiente formato:
+
 Persona → { "nombre": ..., "apellido": ..., "edad":... }
 Mascota → { "nombre":..., "raza":..., "edad":... }
+
 ● “/listar” devolverá la lista requerida en
 formato objeto.
 
