@@ -8,6 +8,7 @@ module.exports = {
     },
     create: function(req,res) {
         let mascota = req.query
+        console.log(req.query)
         mascotasModel.save(mascota,(err,mascota)=>{
             if(err){
                 return res.status(500).json({
