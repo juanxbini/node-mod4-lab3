@@ -32,6 +32,7 @@ los métodos correspondientes.
 con dos formularios: uno que permita ingresar
 mascotas y otro que permita ingresar
 personas, ambos utilizando el método Post.
+*SE UTILIZO HANDLBARS PARA SOLUCIONAR ESTE PUNTO Y QUEDO SIN REALIZARSE EL FORMULARIO PARA INGRESAR PERSONAS*
 
 4. El servidor escuchará peticiones en el puerto
 3000 y mostrará en la consola un mensaje de
