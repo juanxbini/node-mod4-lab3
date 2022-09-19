@@ -8,6 +8,7 @@ lista de mascotas y personas.
 Laboratorio 3
 
 Consideraciones
+
 ● Este debe poseer dos rutas principales:
 “/mascotas” y “/personas”. Dentro de las
 mismas las subrutas “/listar” y “/guardar”.
